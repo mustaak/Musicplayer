@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c72350b913.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="https://t4.ftcdn.net/jpg/01/06/47/61/360_F_106476142_zMZkkTkhMeq0DIjV20oJI00e3QXLYIGN.jpg"alt="Music Player">
+        <h1>ENJOY MUSIC</h1>
+        <div class="list">
+            <ul>
+            <li>Home</li>
+            <li id="menuburger">Playlist</li>
+            <li>Contact</li>
+        </ul>
+        </div>
+    </header>
+
+    <main id="sunrise">
+    <div id="menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div id ="menu1">
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="main_list">
+         <div id="Image">
+            <img id="images" src="https://as1.ftcdn.net/v2/jpg/01/44/96/14/1000_F_144961437_UpnFjar98DUENqJ2MLeUDIRSJuXm80cT.jpg">
+        </div>
+
+        <div class="song_list">
+            <h1 class="heading">ALL SONG LIST</h1>
+            <div class="songitem">
+            <img>
+            <span class="songname">Arjit sing mashup</span>
+            <span class="songlist"><span class="time">05:34</span><i class="fas fa-play songitemplay" id="0" style="margin: 10px 10px 10px 42px;"></i></span>
+        </div>
+        <div class="songitem">
+            <img>
+            <span class="songname">Arjit sing mashup</span>
+            <span class="songlist"><span class="time">05:34</span><i class="fas fa-play songitemplay" id="1" style="margin-left: 24px;"></i></span>
+        </div>
+         <div class="songitem">
+            <img>
+            <span class="songname">Arjit sing mashup</span>
+            <span class="songlist"><span id="time">05:34</span><i class="fas fa-play songitemplay" id="2" style="margin-left: 11px;"></i></span>
+        </div>
+        </div>
+        </div>
+        <div class="audio-info">
+            <h2>Audio Title</h2>
+            <h3>Reciter Name</h3>
+        </div>
+        <div class="songinfo">
+            <img src="https://media.tenor.com/TsmIbA31bUMAAAAi/music-sounds.gif" id="gif"><span id="spanname"></span>
+        </div>
+        <div class="progress-bar">
+            <input type="range" id="seek" min="0" max="100">
+            <div class="progress" id="progress"></div>
+            <div class="dot" id="dot"></div>
+            <div class="dur_list">
+            <span id="duration" style="color: white; float: right;"></span>
+            <span id="durationend" style="color: white;"></span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <i class="fas fa-volume-up" id="up"></i>
+         <div class="volum_bar">
+            <input type="range" id="volu" min="0" max="100">
+            <div class="progress" id="vol_progress"></div>
+            <div class="dot" id="vol_dot"></div>
+        </div>
+        <button id="prev"><i class="fas fa-backward"></i></button>
+        <button id="play"><i class="fas fa-play"></i></button>
+        <button id="pause"><i class="fas fa-pause"></i></button>
+        <button id="next"><i class="fas fa-forward"></i></button>
+    </footer>
+</body>
+<script src="./app.js"></script>
+
+</html>

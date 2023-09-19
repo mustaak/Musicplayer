@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+ul{
+    display: inline-flex;
+    padding: 10px 10px 10px 131px;
+}
+li{
+     list-style: none;
+    padding: 0px 0px 0px 111px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    color: white;
+    padding: 11px;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+main {
+  padding: 50px;
+}
+.audio-info{
+     position: relative;
+    top: -58px;
+    left: 46px;
+}
+.audio-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.audio-info h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(105, 105, 170, .1);
+  margin: 0px 15px 0px 10px;
+}
+.volum_bar {
+    position: relative;
+    width: 8%;
+    height: 2px;
+    background-color: rgb(105, 105, 170, .1);
+    margin: 0px 49px 0px -136px;
+}
+
+div#progress {
+    position: absolute;
+    background: red;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    transition: 1s linear;
+}
+div#vol_progress {
+    position: absolute;
+    background: red;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: 0.6s linear;
+}
+div#dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: aliceblue;
+    border-radius: 11px;
+    left: 0%;
+    top: -1.6px;
+    transition: 1s linear;
+  }
+  div#dot::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid red;
+    border-radius: 50%;
+    left: -7px;
+    top: -7px;
+    transition: 1s linear;
+    box-shadow: inset 0px 0px 3px red;
+  }
+
+div#vol_dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: aliceblue;
+    border-radius: 11px;
+    left: 100%;
+    top: -1.6px;
+    transition: 0.6s linear;
+  }
+  div#vol_dot::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid red;
+    border-radius: 50%;
+    left: -7px;
+    top: -7px;
+    transition: 1s linear;
+    box-shadow: inset 0px 0px 3px red;
+  }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    margin-left: 0px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+i{
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+#Image{
+    height: 200px;
+    width: 378px;
+    margin-bottom: 103px;
+   
+}
+#images{
+  width: 205px;
+  height: 199px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+main#sunrise {
+  background-image: url("https://images.unsplash.com/photo-1567119715747-ff9c10f46115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+  height: 500px;
+}
+.songitemplay{
+  margin-left: 19px;
+}
+.song_list{
+    width: 28%;
+    background-image: url(https://thumbs.dreamstime.com/b/launched-multicolored-powder-black-background-color-powder-explosion-colorful-dust-splashing-launched-multicolored-powder-185914955.jpg?w=768);
+    padding: 15px;
+    border-radius: 12px;
+    transition: 3s linear;
+    background-position: 38%;
+    padding: 40px;
+}
+.main_list{
+  display: flex;
+  justify-content: space-between;
+}
+.songitem img{
+    width: 59px;
+    height: 53px;
+    padding: 6px;
+    object-fit: contain;
+}
+.songitem{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  background: white;
+  margin-top: 4px;
+  border-radius: 10px;
+}
+
+li:hover{
+  cursor: pointer;
+  color: red;
+  transition: 1s linear;
+}
+.songinfo img{
+    width: 69px;
+    height: 43px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.songinfo{
+  width: 52%;
+    position: relative;
+    bottom: 22px;
+}
+.songinfo span{
+  color: white;
+ margin-left: 10px;
+}
+#menu i{
+  color: white;
+  font-size: 20px;
+}
+#menu {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+#menu1 {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+#menu1 i{
+    color: white;
+    font-size: 20px;
+}
+.songitemplay{
+  color: black;
+}
+
+#images{
+  transform-origin: center;
+  transition: opacity 1s ease;
+}
+.rotate{
+  animation: spin 3s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#seek{
+  width: 100%;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  cursor: pointer;
+  z-index: 9;
+  transition: 1s linear;
+  opacity: 0;
+}
+#volu{
+  width: 100%;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  cursor: pointer;
+  z-index: 9;
+  transition: 0.6s linear;
+  opacity: 0;
+}
+.dur_list {
+    margin: -12px 0px 0px 19px;
+    padding: 10px;
+}
+.heading{
+     font-family: 'kanit', sans-serif;
+     color: white;
+     font-size: 35px;
+     display: inline;
+}
+i.fas.fa-volume-up {
+    position: relative;
+    right: 150px;
+}
+i.fas.fa-volume-mute {
+    position: relative;
+    right: 150px;
+}
+i.fas.fa-volume-down {
+    position: relative;
+    right: 150px;
+}
+
+@media only screen and (max-width: 800px) {
+    .list {
+      display: none;
+    }
+    #Image {
+    height: 200px;
+    width: 201px;
+    margin-bottom: 68px;
+   }
+   .main_list {
+    display: flex;
+    justify-content: center;
+   }
+   .audio-info {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+  }
+  .song_list {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 60%;
+}
+ }
+
+ @media only screen and (min-width: 800px) {
+    #menu {
+    position: absolute;
+    right: 79px;
+    top: 26px;
+    display: none;
+  }
+ }
